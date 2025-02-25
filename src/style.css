@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Spongeboy';
+    src: url('assets/fonts/Spongeboy.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('assets/fonts/PlayfairDisplay.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 2px 3px rgb(175, 175, 175);
+}
+
+.header .logo {
+    font-family: Spongeboy, sans-serif;
+    font-size: 2rem;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.home-btn,
+.menu-btn,
+.contact-btn {
+    font-family: Playfair, sans-serif;
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+}
+
+.page-content {
+    grid-row: 2;
+}
